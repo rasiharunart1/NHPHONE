@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#b1b1ff",
+              "inverse-on-surface": "#303032",
+              "surface-bright": "#39393b",
+              "tertiary-fixed": "#f6d9ff",
+              "on-tertiary-fixed-variant": "#7200a3",
+              "on-primary": "#303034",
+              "secondary-fixed": "#e2dfff",
+              "surface-variant": "#353437",
+              "outline": "#929095",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#510074",
+              "on-error": "#690005",
+              "surface": "#131315",
+              "on-primary-fixed": "#1b1b1f",
+              "on-secondary-fixed": "#0c006b",
+              "tertiary-container": "#180026",
+              "secondary-container": "#3630bf",
+              "surface-container-high": "#2a2a2c",
+              "inverse-primary": "#5f5e63",
+              "tertiary": "#e9b3ff",
+              "primary": "#c8c5cb",
+              "on-surface": "#e4e2e4",
+              "on-tertiary-fixed": "#310048",
+              "background": "#131315",
+              "surface-container": "#1f1f21",
+              "primary-fixed": "#e4e1e7",
+              "primary-container": "#0b0b0f",
+              "outline-variant": "#47464b",
+              "on-secondary-fixed-variant": "#332dbc",
+              "on-surface-variant": "#c8c5cb",
+              "surface-container-highest": "#353437",
+              "surface-container-low": "#1b1b1d",
+              "error-container": "#93000a",
+              "secondary-fixed-dim": "#c2c1ff",
+              "on-primary-fixed-variant": "#47464b",
+              "on-secondary": "#1800a7",
+              "surface-container-lowest": "#0e0e10",
+              "inverse-surface": "#e4e2e4",
+              "on-tertiary-container": "#af4ae2",
+              "primary-fixed-dim": "#c8c5cb",
+              "surface-dim": "#131315",
+              "tertiary-fixed-dim": "#e9b3ff",
+              "on-primary-container": "#7b797e",
+              "surface-tint": "#c8c5cb",
+              "secondary": "#c2c1ff",
+              "error": "#ffb4ab",
+              "on-background": "#e4e2e4"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30 selection:text-secondary-fixed">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-white/10 dark:bg-[#1b1b1d]/80 backdrop-blur-xl rounded-full mt-6 mx-auto w-[95%] max-w-7xl no-border shadow-2xl shadow-secondary/5 font-['Inter'] antialiased tracking-tight text-sm font-medium">
+<div class="text-2xl font-black tracking-tighter text-[#e4e1e7] hover:scale-[1.02] active:scale-95 transition-transform cursor-pointer">
+            NH PHONE
+        </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white font-bold border-b-2 border-[#c2c1ff] pb-1 transition-all" href="#">Shop</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Sell</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">About</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Warranty</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-white/5 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined text-[#e4e1e7]">search</span>
+</button>
+<button class="px-6 py-2 bg-white text-on-primary rounded-full font-bold hover:scale-[1.02] active:scale-95 transition-all">
+                Login
+            </button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12 pb-24">
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Gallery (Carousel) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="relative aspect-square rounded-xl overflow-hidden glass-panel border border-outline-variant/10 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Premium smartphone with titanium finish showcasing deep purple reflective back and triple camera system on dark obsidian surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcm_8II6dszeJX0yh1Ia80YTHE1Nr8fN_bhDd8esuNa5WEds4QY9oqlyWoxvIOH0QLC0cwjLPcFb0gzze1eTNwdqp3Ut_Il3Kwri2CY680rxfHghdhMLlc6D6M06NSFAczxEdT421uglzurunmKdGM99HD2TgIEhGig6l_5thvSFXoTDRq-1Uo4oOK43lJLS5hPizznJnfgX_DCgbPAj_h94McVhsM4U-oTjwUjHwPD3oswRsfl3BTNe3OsLfwMmP1s9ONbtOq-i8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/40 to-transparent"></div>
+<!-- Navigation Arrows -->
+<div class="absolute inset-y-0 left-4 flex items-center">
+<button class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:bg-white/20 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+</div>
+<div class="absolute inset-y-0 right-4 flex items-center">
+<button class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:bg-white/20 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Badge -->
+<div class="absolute top-6 left-6 px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                        Pristine Condition
+                    </div>
+</div>
+<!-- Thumbnails -->
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden border-2 border-secondary p-1">
+<img class="w-full h-full object-cover rounded-md" data-alt="Close-up of smartphone screen showing vibrant high-resolution display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQmuAJWsSXb6IoYC0uaJE3rm3o_76rOUzHAxf33IZCVNEwMCRb334qfh16BGMtOa9f72A-vGWY_flONA2x3CB59qdGeJEPEU2ZIe9AXSlN3Itc9lEEkdKlUnZMg-jORAS0PkLjqUdn9FmK5NGvdtRPjjd3B44aRexlXwImE1EdO2WImtFfnj4ES7pxxtPus84Ve2gDTqlhWt_hQT4aMTM4EqbojeDBkkFAqRxcfXyJk8cPgUOsw7rL47XjtjSORxzO5E_vgj6f-Gs"/>
+</div>
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden glass-panel border border-outline-variant/10 p-1 opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover rounded-md" data-alt="Side profile of sleek smartphone showing metallic buttons and slim profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4EVD5orjrqDF_Zjx9SSLgXbI2GJ650x7xugJ1I4gWuW0w2P3jlPnWG59R0Y6_3jW0Fpq_9F7djogQnq8OhCWns2ek-7CZHoWhwxyLOjoX35CAcN_w47Ii-X-1tdNagn1ehooRi-AG5SZPV3pUx2_qskwlAQ9HluQ8KeicwR1bySUmOy5S1xpKkK4iNQ5y3Q6GciUpiYLLI30AzzWgQvnG19ITZa2PzgUqGWvAeDnU10GXX11EXUhbfkwrSGqu9qAf38XnyUzZ1lM"/>
+</div>
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden glass-panel border border-outline-variant/10 p-1 opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover rounded-md" data-alt="Detail of camera lenses with light reflecting off the precision glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY0h1Tho5VDVg_djLwRENnTm3HfuG9grZ6zg55DQJW1iYV6BpJLGInTXHYR3xrmrxCR1dStqXKgWVJcbLkh1Ayu_J-ps5GOZvTx6-FFR3hx0TTLKplep1BNOXeNPQKy77pXC7EYwsC1obz4TLwjMneCi_XuK-EHdb7crJbfr5AyU5oK_ntdiDCkPGC7-dfEMNUX0Lrd41nFEWy0Z2fTo679PyZnrSeDtwVzikwcs3QbgToLJIfnFwUeseKv7RVtpzqFQXzuLNVj48"/>
+</div>
+</div>
+</div>
+<!-- Product Info -->
+<div class="lg:col-span-5 flex flex-col gap-8 lg:sticky lg:top-32">
+<div class="space-y-2">
+<h1 class="text-4xl md:text-5xl font-black tracking-tighter text-primary-fixed">NH-15 PRO MAX</h1>
+<p class="text-secondary font-medium tracking-wide">Titanium Gray • 256GB</p>
+</div>
+<div class="flex items-baseline gap-4">
+<span class="text-3xl font-bold text-on-surface">$1,199.00</span>
+<span class="text-on-surface-variant line-through text-lg">$1,299.00</span>
+</div>
+<!-- Specs Highlights -->
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/5">
+<p class="text-xs uppercase tracking-widest text-on-tertiary-container mb-1">Battery Health</p>
+<p class="text-xl font-bold text-tertiary">98%</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/5">
+<p class="text-xs uppercase tracking-widest text-on-secondary-container mb-1">Condition</p>
+<p class="text-xl font-bold text-secondary">A+ Grade</p>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col gap-4">
+<button class="w-full py-5 rounded-xl bg-[#c8c5cb] text-[#303034] font-black text-lg flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-secondary/10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Buy via WhatsApp
+                    </button>
+<button class="w-full py-5 rounded-xl glass-panel border border-outline-variant/20 text-on-surface font-bold flex items-center justify-center gap-3 hover:bg-white/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined">favorite</span>
+                        Add to wishlist
+                    </button>
+</div>
+<!-- Delivery Info -->
+<div class="flex items-center gap-6 py-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">local_shipping</span>
+<div class="text-xs">
+<p class="text-on-surface font-bold">Free Shipping</p>
+<p class="text-on-surface-variant">Global Delivery</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">verified_user</span>
+<div class="text-xs">
+<p class="text-on-surface font-bold">1 Year NH-Care</p>
+<p class="text-on-surface-variant">Official Warranty</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Tabs -->
+<div class="mt-24">
+<div class="flex gap-12 border-b border-outline-variant/10 mb-8 overflow-x-auto no-scrollbar">
+<button class="pb-4 text-white font-bold border-b-2 border-secondary transition-all whitespace-nowrap">Description</button>
+<button class="pb-4 text-on-surface-variant hover:text-white transition-all whitespace-nowrap">Specifications</button>
+<button class="pb-4 text-on-surface-variant hover:text-white transition-all whitespace-nowrap">Reviews (128)</button>
+</div>
+<div class="max-w-3xl space-y-6">
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                    Experience the pinnacle of mobile engineering. The NH-15 Pro Max features a meticulously crafted aerospace-grade titanium frame, providing unparalleled strength while remaining remarkably lightweight. 
+                </p>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                    The advanced triple-lens camera system utilizes computational photography to capture breathtaking detail in any lighting condition. Our proprietary Atmos-Lens coating ensures ghost-free captures even under direct high-intensity light.
+                </p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                        A17 Bionic Evolution Chip
+                    </li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                        6.7-inch ProMotion XDR
+                    </li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                        Ceramic Shield Protection
+                    </li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+                        All-Day Battery Life
+                    </li>
+</ul>
+</div>
+</div>
+<!-- Related Products -->
+<div class="mt-32">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<h2 class="text-3xl font-black tracking-tighter text-primary-fixed">Complete the Ecosystem</h2>
+<p class="text-on-surface-variant">You might also like these accessories</p>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center text-on-surface-variant hover:bg-white/5 transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto no-scrollbar pb-8 -mx-6 px-6">
+<!-- Related Item 1 -->
+<div class="min-w-[300px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden glass-panel border border-outline-variant/10 mb-4 transition-all duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Minimalist white smartwatch with metallic finish on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj4naaz2uZt-xzLHLxCChfmvP3lTjuXg1FGrjsRzXB5nnTmshNRnFkinFiyc4u2evsBwqexxJW9DQof2p9wwNrwVIYO6pcgmFFkMAqD0dcm_p5_GbZ_1TJyhjXxvr9GhUv1cm0VEO8bEOZb2nj_q28dBbpkzCG-RT8KFdX455I4Pr7hApeSXPOqQbZYYwClDaajHvctyLVO1Ndf2WHM4LwhtTfdOjNqWR-usOKBPl5M1BCNvVJTGkpdeyIWY8PbnXtS4bHo0RrrPo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-40"></div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full glass-panel flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h3 class="font-bold text-on-surface mb-1">NH Watch Ultra</h3>
+<p class="text-secondary font-medium">$499.00</p>
+</div>
+<!-- Related Item 2 -->
+<div class="min-w-[300px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden glass-panel border border-outline-variant/10 mb-4 transition-all duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="High-fidelity black over-ear headphones with matte finish and leather earcups" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATFBkw0WvJ5P12CP0rj7NarDYh76PGtQa_7G8c18a9xzliq-1QnOyXELG8qrDEullAshEf6f3UkLwf2ju0nZnPcK45IDtGvUfyQGde81dSFTTOcsHxgMYXsvBHbBX1iPT0NiGmQZVVRIMIWgd_TwEJIraj7XMh-r0LOjY-nndBkBjuGFu_WEPjQCKG73Zq47ARNFjpelZQBuHlx6im5Dvt1YVDiimTemx8iZKblGXsdjG1AB7ipVzOlrR1EF_JrBQMtrwEm9vy92A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-40"></div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full glass-panel flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h3 class="font-bold text-on-surface mb-1">NH Sound Pro</h3>
+<p class="text-secondary font-medium">$349.00</p>
+</div>
+<!-- Related Item 3 -->
+<div class="min-w-[300px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden glass-panel border border-outline-variant/10 mb-4 transition-all duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Compact wireless charging pad with soft fabric surface and glowing light indicator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMJSBnfe6aY6DsD2L9aNNRpqLarNi551K6vnq5NS0MhOiCGsH_vjCvQOTewsh-mVp6N4GJjMBzA2mlr-ywEVVt3I9XnvxnYLeTZaYKotYgoOp8VYWd-Jn65vAo5mPSi6GvKBAiavy9c-LYHP6m8-pvFNKC5FaoVR_nikpwBDGt5uNZq9Da3pPPdgKgfIJqVBEllyOg3EfneNtS86KD1HYOY8ryuf1jUg-2H6lgJ4i3YS7cVUpYq2hTzYOUtdnOFfpihm-9j9tv7IQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-40"></div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full glass-panel flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h3 class="font-bold text-on-surface mb-1">NH Power Pad</h3>
+<p class="text-secondary font-medium">$89.00</p>
+</div>
+<!-- Related Item 4 -->
+<div class="min-w-[300px] group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden glass-panel border border-outline-variant/10 mb-4 transition-all duration-500 group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="Protective clear glass case for smartphone showing reinforced corners and precision cutouts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkfccszuPVQRQblhUDPtPz8daxNdl6mijH7voWkUMcDV0Y-ogkkA5uvHuopmc0YSRt7uPX5Cn-Tbk73qe1nFI834EEsTOJDQV-hTH89HEg_DlgfjFyLWQP1B5cXhqBhMs7q7tVoWOzyvVZIj36MUcEocvUtLmfJGo9G6L8fWBfmH8BWd9dJO5yDUC5XLcs7cLIYnb5cVSQp1ld0JODtQotS7rUJT4fpgI4niq56jVcGVWkbrFt9lIJCZKi3O5vdsBGC8jhxrar8ys"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-40"></div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full glass-panel flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h3 class="font-bold text-on-surface mb-1">NH Shield Case</h3>
+<p class="text-secondary font-medium">$59.00</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col items-center gap-8 border-t border-white/5 bg-[#0b0b0f] w-full pt-24 pb-12 font-['Inter'] text-xs uppercase tracking-[0.2em] text-[#c8c5cb]">
+<div class="flex flex-wrap justify-center gap-12 px-6">
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Shipping</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Returns</a>
+</div>
+<div class="mt-8 text-center px-6">
+            © 2024 NH PHONE. Atmospheric Luxury.
+        </div>
+</footer>
+<!-- Mobile Nav Anchor -->
+<div class="md:hidden fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm">
+<div class="bg-surface-container-highest/80 backdrop-blur-md rounded-full px-8 py-4 flex items-center justify-between shadow-2xl border border-white/5">
+<button class="flex flex-col items-center gap-1 text-[#c2c1ff]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#c8c5cb]">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#c8c5cb]">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#c8c5cb]">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</body></html>

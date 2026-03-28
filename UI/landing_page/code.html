@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#b1b1ff",
+              "inverse-on-surface": "#303032",
+              "surface-bright": "#39393b",
+              "tertiary-fixed": "#f6d9ff",
+              "on-tertiary-fixed-variant": "#7200a3",
+              "on-primary": "#303034",
+              "secondary-fixed": "#e2dfff",
+              "surface-variant": "#353437",
+              "outline": "#929095",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#510074",
+              "on-error": "#690005",
+              "surface": "#131315",
+              "on-primary-fixed": "#1b1b1f",
+              "on-secondary-fixed": "#0c006b",
+              "tertiary-container": "#180026",
+              "secondary-container": "#3630bf",
+              "surface-container-high": "#2a2a2c",
+              "inverse-primary": "#5f5e63",
+              "tertiary": "#e9b3ff",
+              "primary": "#c8c5cb",
+              "on-surface": "#e4e2e4",
+              "on-tertiary-fixed": "#310048",
+              "background": "#131315",
+              "surface-container": "#1f1f21",
+              "primary-fixed": "#e4e1e7",
+              "primary-container": "#0b0b0f",
+              "outline-variant": "#47464b",
+              "on-secondary-fixed-variant": "#332dbc",
+              "on-surface-variant": "#c8c5cb",
+              "surface-container-highest": "#353437",
+              "surface-container-low": "#1b1b1d",
+              "error-container": "#93000a",
+              "secondary-fixed-dim": "#c2c1ff",
+              "on-primary-fixed-variant": "#47464b",
+              "on-secondary": "#1800a7",
+              "surface-container-lowest": "#0e0e10",
+              "inverse-surface": "#e4e2e4",
+              "on-tertiary-container": "#af4ae2",
+              "primary-fixed-dim": "#c8c5cb",
+              "surface-dim": "#131315",
+              "tertiary-fixed-dim": "#e9b3ff",
+              "on-primary-container": "#7b797e",
+              "surface-tint": "#c8c5cb",
+              "secondary": "#c2c1ff",
+              "error": "#ffb4ab",
+              "on-background": "#e4e2e4"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .glow-secondary {
+            background: radial-gradient(circle, rgba(194, 193, 255, 0.15) 0%, rgba(19, 19, 21, 0) 70%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-white/10 dark:bg-[#1b1b1d]/80 backdrop-blur-xl rounded-full mt-6 mx-auto w-[95%] max-w-7xl no-border shadow-2xl shadow-secondary/5 font-['Inter'] antialiased tracking-tight text-sm font-medium">
+<div class="text-2xl font-black tracking-tighter text-[#e4e1e7]">NH PHONE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-white font-bold border-b-2 border-[#c2c1ff] pb-1" href="#">Shop</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Sell</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">About</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Warranty</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 hover:bg-white/5 rounded-full transition-all duration-300 text-[#e4e1e7]">search</button>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-bold hover:scale-[1.02] active:scale-95 transition-transform">Login</button>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col items-center justify-center overflow-hidden px-6 pt-20">
+<div class="absolute inset-0 glow-secondary pointer-events-none"></div>
+<div class="relative z-10 text-center max-w-4xl">
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 text-primary-fixed leading-tight">
+                    Premium <br/>Second iPhone
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-medium tracking-tight mb-12">
+                    Trusted, Elegant, High Quality
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="group relative px-10 py-5 bg-primary text-on-primary rounded-full font-bold text-lg shadow-xl shadow-secondary/10 transition-all hover:scale-[1.05] active:scale-95">
+                        Browse Catalog
+                        <div class="absolute inset-0 rounded-full bg-secondary opacity-0 group-hover:opacity-20 blur-xl transition-opacity"></div>
+</button>
+<button class="px-10 py-5 glass-panel text-white rounded-full font-bold text-lg border border-outline-variant/20 hover:bg-white/10 transition-all hover:scale-[1.05] active:scale-95">
+                        Sell Your iPhone
+                    </button>
+</div>
+</div>
+<!-- Hero Image Visual -->
+<div class="mt-20 relative w-full max-w-5xl aspect-video flex justify-center">
+<div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[120%] h-full bg-tertiary/5 blur-[120px] rounded-full"></div>
+<img alt="iPhone Visual" class="relative z-20 w-3/4 object-contain drop-shadow-[0_35px_35px_rgba(194,193,255,0.15)] transform hover:rotate-2 transition-transform duration-700" data-alt="floating premium deep purple iphone 14 pro showing cinematic lighting with soft purple highlights against a dark atmospheric background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmlwc01gBo2xioyVphIulTpPeev6RDCNC78hdpE2szN1HlOIbWIloDhYUULzALBHYgrE_RSQ2goG-IsN9Iw19A4jd8bpc6svJnMpBx2Kof2gJdk9lGEOQUHfHm5Lsrbi6swNCN2ilPtWiEFso2T8z-tcL5IrUXKkvMXdiDBkTYwgnIIkyJcvjoxvAbS1qx8QsU1m3YCiPrhpPLWxWJFB-zdtlzH-5IISxbc6tI02MFQtOhjGu9qeG8IwKPiLyVLWw_tymuHiSaKY"/>
+</div>
+</section>
+<!-- Featured Products Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Selected Units</span>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight text-primary-fixed">Featured Inventory</h2>
+</div>
+<a class="text-on-surface-variant hover:text-white flex items-center gap-2 transition-colors" href="#">
+                    View all items <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="glass-panel rounded-xl p-8 border border-outline-variant/10 group hover:scale-[1.02] transition-all duration-500">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg">
+<img alt="iPhone 15 Pro" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="sleek titanium iphone 15 pro front view on a minimalist dark stone surface with elegant studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzAXqxHqHH-gxpHbwAhrAXyI4hL9efADIC27ZQQ9rPGJ5DyjmIBZo_hlubI_SZ8Aw_j_kEpTdEROWxCai3uWwxcLxtvsEIQUr_TECmriAC0lJeTqVzv2aTtLKOHvw6bLyLso7jie8ufcSgNUvBY0GFg55QSDCkqU16sisjsS2t-mkVcrbn6l8nyCcW59pqXv2cXeEXFVi6O4W5RaH2P-YkSOElLI6Ap3VJ6dla8bM_ksKeOmuKXS5_2ivSZlw5hYNPfOoiAr6Qoc0"/>
+</div>
+<h3 class="text-2xl font-bold mb-2">iPhone 15 Pro</h3>
+<div class="flex justify-between items-center mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">battery_very_low</span>
+<span class="text-sm font-medium">98% Health</span>
+</div>
+<span class="text-tertiary font-black text-xl">$899</span>
+</div>
+<button class="w-full py-4 bg-surface-container-high rounded-full font-bold hover:bg-secondary hover:text-on-secondary transition-all">Details</button>
+</div>
+<!-- Product Card 2 -->
+<div class="glass-panel rounded-xl p-8 border border-outline-variant/10 group hover:scale-[1.02] transition-all duration-500">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg">
+<img alt="iPhone 13" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="midnight blue iphone 13 with reflections of soft light on its screen sitting on a dark glass table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ow3ADuxgQjuqtPqfXfXwQPM9T5RWrnutY806-k-e9B677L3jwhtxSDE5j6ZQCNB25lb2u7E8P6QYnjO0h9qDuKo_SNTXkg_MAQ0mDPNz4FzjszXnGch7EQieDtm_U1GWpCk5Zi8EwyvVUzdrlzL4zj6ZoiAd13m_Jgbz44W4tkQct5T8nUe2BAnGOv-DmG4tn3LAWuytfBgxYHDFZXN3A5jH75vDPOBsRc7Vq4guRUCCw4pmzXovxrRjJ_Q9COkMdt0cToN5yQU"/>
+</div>
+<h3 class="text-2xl font-bold mb-2">iPhone 13</h3>
+<div class="flex justify-between items-center mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">battery_very_low</span>
+<span class="text-sm font-medium">92% Health</span>
+</div>
+<span class="text-tertiary font-black text-xl">$450</span>
+</div>
+<button class="w-full py-4 bg-surface-container-high rounded-full font-bold hover:bg-secondary hover:text-on-secondary transition-all">Details</button>
+</div>
+<!-- Product Card 3 -->
+<div class="glass-panel rounded-xl p-8 border border-outline-variant/10 group hover:scale-[1.02] transition-all duration-500">
+<div class="aspect-square mb-8 overflow-hidden rounded-lg">
+<img alt="iPhone 14 Plus" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="stunning red iphone 14 plus close up focusing on the camera module with vibrant color saturation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH_sHdiS9qOLGFJEGUIMUOJhe9lTbmCTMDJfzLPXhSgjhPHZJLovP4V3mT3cilzNaT7K2vnGsHxkp9BDCpgTzfTf156UWGJE8e2Dw2qmYweWCsAR83UiqXJcE6IbJMQyXhKslh9ljmV2s_2aUScPi0bKl73Lns6B5lUG2xHhjNbqcZJRBOO49fXTg89MfT1ZTWiEDrwxEREDdwQq-rV53iIZFHa1-ZOOraKzugZYHL7XpQGUXiGZm6PW11GHCofT1GhI-2PjFDgks"/>
+</div>
+<h3 class="text-2xl font-bold mb-2">iPhone 14 Plus</h3>
+<div class="flex justify-between items-center mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">battery_very_low</span>
+<span class="text-sm font-medium">100% Health</span>
+</div>
+<span class="text-tertiary font-black text-xl">$620</span>
+</div>
+<button class="w-full py-4 bg-surface-container-high rounded-full font-bold hover:bg-secondary hover:text-on-secondary transition-all">Details</button>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Bento Grid -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px]">
+<div class="md:col-span-2 md:row-span-2 glass-panel rounded-xl p-12 flex flex-col justify-end border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute top-10 right-10 opacity-20 transform scale-[3]">
+<span class="material-symbols-outlined text-secondary" style="font-size: 80px;">verified_user</span>
+</div>
+<h2 class="text-4xl font-black mb-4 relative z-10">100% Trusted <br/>Sources.</h2>
+<p class="text-on-surface-variant text-lg max-w-md relative z-10">Every device is sourced from verified corporate partners and individual first-owners only.</p>
+</div>
+<div class="md:col-span-2 glass-panel rounded-xl p-8 border border-outline-variant/10 flex items-center gap-8">
+<div class="bg-secondary/20 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-secondary" style="font-size: 40px;">quiz</span>
+</div>
+<div>
+<h3 class="text-xl font-bold">Rigorous Testing</h3>
+<p class="text-on-surface-variant">42-point inspection by certified techs.</p>
+</div>
+</div>
+<div class="md:col-span-1 glass-panel rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-center text-center gap-4">
+<span class="material-symbols-outlined text-tertiary text-4xl">verified</span>
+<h3 class="font-bold">1-Year Warranty</h3>
+</div>
+<div class="md:col-span-1 glass-panel rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-center text-center gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">local_shipping</span>
+<h3 class="font-bold">Fast Delivery</h3>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-6 bg-surface-container-lowest/50">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-black tracking-tight mb-16 text-center">What our collectors say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-panel p-8 rounded-xl border border-outline-variant/5">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface mb-6">"Condition was exactly as described. Battery health was actually 99% instead of the 98% listed. Exceptional service."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high"></div>
+<div>
+<span class="block font-bold">Julian M.</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-widest">iPhone 15 Pro Buyer</span>
+</div>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl border border-outline-variant/5">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface mb-6">"Sold my old iPhone 12. The process was smooth and payment was instant. Way better than trading into the mall."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high"></div>
+<div>
+<span class="block font-bold">Sarah K.</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-widest">Seller</span>
+</div>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl border border-outline-variant/5 md:hidden lg:block">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface mb-6">"NH Phone is the only place I trust for second-hand. The packaging feels like buying a brand new phone from Apple."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high"></div>
+<div>
+<span class="block font-bold">David R.</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-widest">Repeat Customer</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6 overflow-hidden relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] glow-secondary pointer-events-none opacity-40"></div>
+<div class="max-w-4xl mx-auto glass-panel rounded-[4rem] p-16 text-center relative z-10 border border-white/10">
+<h2 class="text-5xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Upgrade?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">Get personalized assistance, more photos of specific units, and exclusive deals via WhatsApp.</p>
+<button class="px-12 py-6 bg-[#25D366] text-white rounded-full font-bold text-xl flex items-center gap-4 mx-auto hover:scale-105 transition-transform shadow-2xl shadow-green-500/20">
+<span class="material-symbols-outlined text-3xl">chat</span>
+                    Order via WhatsApp
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col items-center gap-8 border-t border-white/5 w-full pt-24 pb-12 bg-[#0b0b0f] font-['Inter'] text-xs uppercase tracking-[0.2em] text-[#c8c5cb]">
+<div class="flex flex-wrap justify-center gap-12 mb-8">
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Shipping</a>
+<a class="text-[#47464b] hover:text-[#c8c5cb] transition-colors" href="#">Returns</a>
+</div>
+<div class="flex gap-6 mb-8">
+<a class="material-symbols-outlined text-2xl opacity-50 hover:opacity-100 transition-opacity" href="#">public</a>
+<a class="material-symbols-outlined text-2xl opacity-50 hover:opacity-100 transition-opacity" href="#">alternate_email</a>
+<a class="material-symbols-outlined text-2xl opacity-50 hover:opacity-100 transition-opacity" href="#">share</a>
+</div>
+<p>© 2024 NH PHONE. Atmospheric Luxury.</p>
+</footer>
+<!-- Mobile Nav Anchor -->
+<div class="md:hidden fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm">
+<div class="glass-panel rounded-full px-6 py-4 flex justify-around items-center border border-white/10 shadow-2xl">
+<button class="flex flex-col items-center gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Shop</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Account</span>
+</button>
+</div>
+</div>
+</body></html>

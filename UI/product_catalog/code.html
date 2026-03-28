@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NH PHONE | Product Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#b1b1ff",
+              "inverse-on-surface": "#303032",
+              "surface-bright": "#39393b",
+              "tertiary-fixed": "#f6d9ff",
+              "on-tertiary-fixed-variant": "#7200a3",
+              "on-primary": "#303034",
+              "secondary-fixed": "#e2dfff",
+              "surface-variant": "#353437",
+              "outline": "#929095",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#510074",
+              "on-error": "#690005",
+              "surface": "#131315",
+              "on-primary-fixed": "#1b1b1f",
+              "on-secondary-fixed": "#0c006b",
+              "tertiary-container": "#180026",
+              "secondary-container": "#3630bf",
+              "surface-container-high": "#2a2a2c",
+              "inverse-primary": "#5f5e63",
+              "tertiary": "#e9b3ff",
+              "primary": "#c8c5cb",
+              "on-surface": "#e4e2e4",
+              "on-tertiary-fixed": "#310048",
+              "background": "#131315",
+              "surface-container": "#1f1f21",
+              "primary-fixed": "#e4e1e7",
+              "primary-container": "#0b0b0f",
+              "outline-variant": "#47464b",
+              "on-secondary-fixed-variant": "#332dbc",
+              "on-surface-variant": "#c8c5cb",
+              "surface-container-highest": "#353437",
+              "surface-container-low": "#1b1b1d",
+              "error-container": "#93000a",
+              "secondary-fixed-dim": "#c2c1ff",
+              "on-primary-fixed-variant": "#47464b",
+              "on-secondary": "#1800a7",
+              "surface-container-lowest": "#0e0e10",
+              "inverse-surface": "#e4e2e4",
+              "on-tertiary-container": "#af4ae2",
+              "primary-fixed-dim": "#c8c5cb",
+              "surface-dim": "#131315",
+              "tertiary-fixed-dim": "#e9b3ff",
+              "on-primary-container": "#7b797e",
+              "surface-tint": "#c8c5cb",
+              "secondary": "#c2c1ff",
+              "error": "#ffb4ab",
+              "on-background": "#e4e2e4"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131315;
+        color: #e4e2e4;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-white/10 dark:bg-[#1b1b1d]/80 backdrop-blur-xl rounded-full mt-6 mx-auto w-[95%] max-w-7xl no-border shadow-2xl shadow-secondary/5 font-['Inter'] antialiased tracking-tight text-sm font-medium">
+<div class="text-2xl font-black tracking-tighter text-[#e4e1e7]">NH PHONE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-white font-bold border-b-2 border-[#c2c1ff] pb-1" href="#">Shop</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Sell</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">About</a>
+<a class="text-[#c8c5cb] hover:text-white transition-colors" href="#">Warranty</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span>
+<input class="bg-surface-container-highest/50 border-none rounded-full py-2 pl-10 pr-4 text-xs focus:ring-1 focus:ring-secondary/50 w-64 transition-all" placeholder="Search devices..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:scale-[1.02] active:scale-95 transition-transform">Login</button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 mt-12 mb-24 flex flex-col md:flex-row gap-12">
+<!-- Sidebar Filter: NH Admin SideNav Inspiration -->
+<aside class="w-full md:w-72 flex-shrink-0">
+<div class="glass-card p-8 rounded-xl sticky top-32 border border-white/5 space-y-10">
+<div>
+<h3 class="text-[#e4e1e7] font-bold text-lg mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">tune</span>
+                        Filters
+                    </h3>
+<!-- Price Range -->
+<div class="space-y-4 mb-8">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Price Range</label>
+<div class="space-y-2">
+<input class="w-full accent-secondary" max="2000" min="200" type="range"/>
+<div class="flex justify-between text-xs text-on-surface-variant">
+<span>$200</span>
+<span>$2000</span>
+</div>
+</div>
+</div>
+<!-- Storage -->
+<div class="space-y-4 mb-8">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Storage Capacity</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-xs hover:bg-secondary/20 transition-colors">128GB</button>
+<button class="px-4 py-2 rounded-lg bg-white/10 text-white border border-secondary/30 text-xs">256GB</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-xs hover:bg-secondary/20 transition-colors">512GB</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-xs hover:bg-secondary/20 transition-colors">1TB</button>
+</div>
+</div>
+<!-- Condition -->
+<div class="space-y-4">
+<label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Condition</label>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors">
+<div class="w-2.5 h-2.5 bg-secondary rounded-sm opacity-0"></div>
+</div>
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Mint (100%)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-secondary flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-secondary rounded-sm"></div>
+</div>
+<span class="text-sm text-white">Like New (95%+)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-5 h-5 rounded border border-outline-variant flex items-center justify-center group-hover:border-secondary transition-colors">
+<div class="w-2.5 h-2.5 bg-secondary rounded-sm opacity-0"></div>
+</div>
+<span class="text-sm text-on-surface-variant group-hover:text-white transition-colors">Light Use</span>
+</label>
+</div>
+</div>
+</div>
+<button class="w-full py-4 rounded-2xl bg-secondary-container text-white font-bold hover:scale-[1.02] active:scale-95 transition-transform flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">refresh</span>
+                    Reset All
+                </button>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="flex-grow">
+<!-- Grid Header -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-12">
+<div>
+<h1 class="text-4xl font-black text-primary-fixed tracking-tight">Product Catalog</h1>
+<p class="text-on-surface-variant mt-2">Showing 24 premium refurbished devices</p>
+</div>
+<div class="flex items-center gap-3 glass-card px-4 py-2 rounded-full">
+<span class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Sort by:</span>
+<select class="bg-transparent border-none text-sm text-white focus:ring-0 cursor-pointer">
+<option class="bg-surface">Newest First</option>
+<option class="bg-surface">Price: Low to High</option>
+<option class="bg-surface">Battery Health</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-secondary text-on-secondary text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Best Deal</span>
+</div>
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-secondary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 15 Pro Titanium" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Sleek titanium smartphone floating in a dark studio setting with soft purple rim lighting and high-end photographic quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfFrSFp9XOU4aYMn_fbtCOP6jqfmmzn1veY3hYh_6OhZ5hg64VrLA3uzMW8ZqoIOBRcByCSEBFqgOutMXzTHLLirEVSgOkebs_e0Uhho-NkCYz_BkVFGskvjDiZV-i9LrbkbrQJxNTnz82LkI_hVe1I2hNZgxdmUM07GETYwrg980CMnnbPfzNPuP851yETQxe5S1WMVh_kdqWXJdP_8I4wL0yoJ-O8CxzTqkt5VzmmnXVlqZR1LolSEDpX3UXPfpkOknu9BI8KCo"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 15 Pro</h2>
+<span class="text-secondary font-black text-lg">$999</span>
+</div>
+<p class="text-sm text-on-surface-variant">Natural Titanium • 256GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_charging_full</span>
+<span class="text-xs font-medium">98% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span class="text-xs font-medium">Like New</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-tertiary text-on-tertiary text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Rare Color</span>
+</div>
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-tertiary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 13 Pink" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Modern pink smartphone showcased against a deep black background with soft pink ambient glow and dramatic highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByvf_iR33lxMJH-sDTumxLuHaRWO_LIPSCnyhZdd1r3VrF7UO_VsCwTSKIg71ZTjIfwc8yQJUlVgD7pDyufnwO7oqovc2yYqdPa4rjlI3oOKZt3iCy3qgUqGvLNgyTNbvfABZKIQF7xD9kFSufGoIh8t5culPdVBQZgrN-0FTiPb5pcCvbzWPtHYdMxO8ADzGc2bwIP9jB-MBpqZiPSyPF4qG4ZMTAtPxLgtPGjtmk8fzAmH9ZZ1gUn5qZ7kEePgg-hZ9fey3Vt6Y"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 13</h2>
+<span class="text-secondary font-black text-lg">$449</span>
+</div>
+<p class="text-sm text-on-surface-variant">Sakura Pink • 128GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_very_low</span>
+<span class="text-xs font-medium">91% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">auto_awesome</span>
+<span class="text-xs font-medium">Refurbished</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-white/10 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-md">Value Pick</span>
+</div>
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-primary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 12 Black" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Minimalist black smartphone design with polished glass back sitting in a low-light luxury setting with atmospheric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcGF6pXs-8AFZGu07xYNTzVrMHM0ZbWAgqkX1rJpjcEsk6o7HoTEtCA-fsQtJ-upYD88rs8kl16mVywx8aePw1AQpzp7E7F_YmkdBPv9mcbxewuTjsIk1izgEWfOdRCf2-dQTOZ77szOUQJodXRO6KqNFTLOlnP0lHrc9GjgcdWKk3cFkwr7pzfND0T_cofTaeIFPZaFLvHu7x8RYapkvKWbbTwr44SYpUUIfiQQw7Pa5az47z8uCGo0ynaSakegyabe5v-_dF2hM"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 12</h2>
+<span class="text-secondary font-black text-lg">$329</span>
+</div>
+<p class="text-sm text-on-surface-variant">Midnight • 64GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_charging_full</span>
+<span class="text-xs font-medium">100% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span class="text-xs font-medium">New Battery</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-secondary text-on-secondary text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Elite Grade</span>
+</div>
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-secondary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 14 Pro Deep Purple" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Close-up of a deep purple premium smartphone lens array with complex light refractions and ultra-sharp focus on the glass texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu9QFDuzs0ef95yZ4pgXQPQveP0LeoLqXu2KtD_RSPT2ajj986Y6cIczFGD5-alJxOWBKBoQMH3s1zFcDztw2ygb3FJpvX_sd09U1mLt0xBIjAa84jDDjDdylpalQEtt4Ho2gZbtB3wxwUUHOGLFkXdEoBaBhpWOE7d66wwkaeqV3XlGGCm9WT3Rb84GwzNETBuFFyzeWQGYOvaE66UZG_KIVM3Z-LUjhgFvIZuOhcO0-qW0orkhXrH7FE3Jk9ymeap_Lc9WrDzlk"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 14 Pro</h2>
+<span class="text-secondary font-black text-lg">$799</span>
+</div>
+<p class="text-sm text-on-surface-variant">Deep Purple • 512GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_charging_full</span>
+<span class="text-xs font-medium">96% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">workspace_premium</span>
+<span class="text-xs font-medium">Pristine</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-tertiary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 13 Pro Alpine Green" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Front view of an alpine green smartphone display showing a vibrant abstract wallpaper with realistic screen reflections and dark surroundings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADE2lkjquHG35y8xzYMgtLx-rY820vYiWV-1dhh2l_5Z-ZOdfEImZai1Tn-xyJ46sGhyEMjuaLnZ9YADgPt4vWuLuRPoggeZI4J98acuqt97Tdg96THvEmHB3JaaaKsV2qxr7DT3z7pxI-41o2oG4Kw77CF9BqZTz5nz_kybykg0eMPrxF_bPCiuMt5V8oC7geEMSqlIfXg6_BrD8humV3MAFUQ_w55e23d0HP-3Caj0ybmE3rYM-W2BqfBPIGhfJzEwtQUgQF_aQ"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 13 Pro</h2>
+<span class="text-secondary font-black text-lg">$629</span>
+</div>
+<p class="text-sm text-on-surface-variant">Alpine Green • 256GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_charging_full</span>
+<span class="text-xs font-medium">93% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span class="text-xs font-medium">Like New</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="glass-card rounded-lg p-6 group transition-all duration-500 hover:scale-[1.02] relative overflow-hidden flex flex-col">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-error-container text-on-error-container text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">Last One</span>
+</div>
+<div class="relative h-64 mb-6 flex items-center justify-center">
+<div class="absolute inset-0 bg-radial-gradient from-primary/20 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<img alt="iPhone 11 Silver" class="h-full object-contain drop-shadow-2xl z-20 transform transition-transform duration-500 group-hover:-translate-y-2" data-alt="Silver aluminum smartphone tilted at an angle showing its sleek profile and metallic texture under cool studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOkwBNkKlO6u8QYZW83SN4Qs98MVxC6N-MoOhj7PlnYjoaw6P8-ufMY15LZZvwUmlozN9AB_SZVmMTXzDDaCXpufOL_SU5cF5kCqsJcguYc0fPq7DuuWCLmZbrevp5F3YwBtDbmoKMKlN7xWenELi3iTGtLNd1B_abA2I2O8Bod4svjBCHtdkvmfvBecBCfY2UY3Rc26cVY5HZePA3RobuEWa125TwAIWyDJVbf3Jowdu9sGv7KMfRQ8CuOf4hBebfaq_QV0IDtgA"/>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex justify-between items-start">
+<h2 class="text-xl font-bold text-white tracking-tight">iPhone 11</h2>
+<span class="text-secondary font-black text-lg">$249</span>
+</div>
+<p class="text-sm text-on-surface-variant">Silver • 64GB</p>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_alert</span>
+<span class="text-xs font-medium">84% Health</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">thumb_up</span>
+<span class="text-xs font-medium">Good Condition</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col items-center gap-8 border-t border-white/5 bg-[#0b0b0f] w-full pt-24 pb-12 font-['Inter'] text-xs uppercase tracking-[0.2em]">
+<div class="flex gap-12 text-[#47464b]">
+<a class="hover:text-white transition-all duration-500" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-all duration-500" href="#">Terms of Service</a>
+<a class="hover:text-white transition-all duration-500" href="#">Shipping</a>
+<a class="hover:text-white transition-all duration-500" href="#">Returns</a>
+</div>
+<p class="text-[#c8c5cb] tracking-[0.3em]">© 2024 NH PHONE. Atmospheric Luxury.</p>
+</footer>
+</body></html>
